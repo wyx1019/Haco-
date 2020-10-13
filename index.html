@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="株式会社スターホームが葉山に建てるセミオーダーの家です">
+    <meta name="keywords" content="Haco,ハコ,スターホーム,葉山,家,セミオーダー,完全定額制住宅,ブルックリンスタイル">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Serif+JP&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <title>スターホーム｜Haco完全定額制住宅</title>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="loading-image">
+            <img src="img/logo_haco.svg" alt="" />
+        </div>
+        <p>完全定額制住宅</p>
+    </div>
+    <header>
+        <nav>
+            <transition-group name="switch">
+                <div id="topLogo">
+                    <a href="#"><img src="img/icon_logo.svg" alt="" /></a>
+                </div>
+                <!-- navigation -->
+                <div id="navigationSP">
+                    <div class="navigationSP" :class="{'is-open':open}" @click="open = !open">
+                        <div class="nav-inner">
+                            <span class="bar1st"></span>
+                            <span class="bar2nd"></span>
+                            <div class="navText">MENU</div>
+                        </div>
+                    </div>
+                    <transition name="nav">
+                        <div id="nav" class="nav" v-show="open">
+                            <div class="nav-body">
+                                <ul class="nav-list">
+                                    <li><a href="#concept">Concept</a></li>
+                                    <li><a href="#main">LifeStyle with 「Haco」</a></li>
+                                    <li><a href="#plan">Price & Plan</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+                <script>
+                    const menu = new Vue({
+                        el: "#navigationSP",
+                        data: {
+                            open: false,
+                        },
+                    });
+                </script>
+                <ul class="navigationPC">
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#main">LifeStyle with 「Haco」</a></li>
+                    <li><a href="#plan">Price & Plan</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </transition-group>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <!-- First View -->
+            <div id="mainVisual">
+                <div class="slide">
+                    <ul>
+                        <li class="mv" style="opacity: 1;"><img src="img/img-main03.jpg" alt="施行例の家のリビング"></li>
+                        <li class="mv" style="opacity: 0;"><img src="img/img-main02.jpg" alt="葉山の海辺"></li>
+                        <li class="mv" style="opacity: 0;"><img src="img/img-main01.jpg" alt="施行例の家のリビング"></li>
+                        <li class="mv" style="opacity: 0;"><img src="img/img-main04.jpg" alt="葉山の海辺"></li>
+                    </ul>
+                </div>
+                <div class="mainMsg">
+                    <h2 class="topFadeIn delay300">HayamaCOde</h2>
+                    <div class="topFadeIn delay1000">
+                        <p>「Haco」完全定額制住宅</p>
+                    </div>
+                    <div class="topFadeIn delay1600">
+                        <p>好きなものに囲まれた暮らしを</p>
+                    </div>
+                    <div class="topFadeIn delay2100">
+                        <button class="btn topContact">
+                            <a href="#contact">CONTACT US<span class="fas fa-chevron-down"></span> </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="side-pc">
+                    <p>スターホーム<span>「完全定額制」</span>住宅　
+                        <i class="fab fa-instagram fa-lg sns"></i>
+                        <i class="fab fa-facebook-square fa-lg sns"></i>
+                    </p>
+                </div>
+                <!-- scrolldown -->
+                <div class="scrollWrap">
+                    <div class="scrollBox">
+                        <p class="scrollText">SCROLL</p>
+                    </div>
+                    <div class="scroll"></div>
+                </div>
+            </div>
+
+            <!-- concept -->
+            <section id="concept">
+                <div class="img-begin fadeIn">
+                    <img src="img/img-concept01.jpg" alt="施行例の家のマガジンラック" />
+                </div>
+                <div class="inner">
+                    <h2>
+                        <span class="eng">CONCEPT</span>
+                        <span class="jp">「Haco」とは</span>
+                    </h2>
+                    <div class="msg">
+                        <div class="fadeIn">
+                            <p>
+                                Hayama Routeが提案する<br />「Haco」というのは、
+                                <br />無垢の床、無垢の壁、洗練された<br /><span class="orange">ブルックリンスタイル。</span>
+                            </p>
+                            <p>
+                                「Dresscode」という言葉を<br class="inline" />「HayamaCode」と置き換え、
+                                <br />「Haco」という名前にしました。
+                            </p>
+                            <p>
+                                カッコよさの中にも可愛らしさが<br class="inline" />調和しているHacoは..
+                            </p>
+
+                            <p>
+                                趣味もインテリアも<br class="inline" />暮らしも楽しんでもらいたい。 <br />「Haco」に住んでる<br
+                                    class="inline" />自分が好きになってもらいたい。
+                                <br />お家を建ててよかったと言ってもらいたい。
+                            </p>
+
+                            <p>
+                                「Haco」は「もらいたい」が沢山つまった<br class="inline" />家族の箱です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-end">
+                    <div class="img-kitchen fadeIn">
+                        <img src="img/img-concept02.jpg" alt="施工例の家のキッチン" />
+                    </div>
+                    <div class="img-tableware fadeIn">
+                        <img src="img/img-concept03.jpg" alt="施工例の家のダイニングテーブル" />
+                    </div>
+                </div>
+            </section>
+            <!-- lifestyle -->
+            <section id="lifestyle">
+                <div class="section-wrap">
+                    <h2>
+                        <span class="eng">LifeStyle</span>
+                        <span class="jp">ライフスタイル</span>
+                    </h2>
+                    <div class="lifestyle indoors">
+                        <div>
+                            <img src="img/img_indoors01.jpg" alt="ブルックリンスタイルのリビング">
+                        </div>
+                        <div class="bgDark"></div>
+                        <div class="lifestyle-text indoors-text fadeIn">
+                            <h3>LifeStyle with 「Haco」
+                                <br>~Indoors編~
+                            </h3>
+                            <h4>開放的なカフェのような雰囲気</h4>
+                            <p>シンプルな中にもヴィンテージ感のあるインテリアアイテムが揃えるのが、ブルックリンスタイルの魅力です。最高にリラックスできるリビングを作ってくつろぎましょう。ヴィンテージな雰囲気の雑貨をたくさん並べて、イマドキのオシャレなカフェ風にすることができる。手作りと職人気質が出せるDIYも「ブルックリンスタイル」にぴったり！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lifestyle indoors">
+                        <div>
+                            <img src="img/img_indoors02.jpg" alt="ブルックリンスタイルのリビング">
+                        </div>
+                        <div class="bgDark"></div>
+                        <div class="lifestyle-text indoors-text fadeIn">
+                            <h3>LifeStyle with 「Haco」
+                                <br>~Indoors編~
+                            </h3>
+                            <div>
+                                <h4>遊び心あふれる自由で開放的な空間</h4>
+                            </div>
+                            <p>レンガ調の壁は、やはりブルックリンスタイルインテリアの代表格ではないでしょうか。レンガ調にするのは全体でなくても、一部分だけでも十分印象が変わります。違った色のレンガを使うと、グッと明るく爽やかになります。優雅で上質なひとときを過ごせそうなリビングはいかがでしょうか。ラフでカッコイイ「ブルックリンスタイル」は、実に自由なライフスタイル、自分らしい空間をミックスすることである。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="outdoors-wrap">
+                        <div class="lifestyle outdoors">
+                            <div>
+                                <img class="rescale" src="img/img_outdoors01.jpg" alt="ブルックリンスタイルのリビング">
+                            </div>
+                            <div class="lifestyle-text outdoors-text fadeIn">
+                                <h3>LifeStyle with 「Haco」
+                                    <br>~Outdoors編~
+                                </h3>
+                                <div>
+                                    <h4>プライベートビーチ雰囲気</h4>
+                                </div>
+                                <p>葉山は、古くからリゾート地として知られています。他の湘南地域より観光客が少なく、落ち着いたビーチが多いと言われる。「一色海岸」が「世界の厳選ビーチ100」に入っている。マリンスポーツ施設が充実している葉山では、本格的なサーフィンやヨットレースからクルージングやフィッシングまで、さまざまにお楽しみいただける。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lifestyle outdoors">
+                            <div>
+                                <img src="img/img_outdoors02.jpg" alt="ブルックリンスタイルのリビング">
+                            </div>
+                            <div class="lifestyle-text outdoors-text fadeIn">
+                                <h3>LifeStyle with 「Haco」
+                                    <br>~Outdoors編~
+                                </h3>
+                                <div>
+                                    <h4>自然あふれる街の中で子育て</h4>
+                                </div>
+                                <p>
+                                    海と山の両方が近く、自然に囲まれた場所でのびのび子どもを育てられるとういうのが葉山エリアの魅力。小さい子供が楽しめる遊具が整えた南郷上ノ山公園などで親子で濃密な時間を過ごすできる。</p>
+                            </div>
+                        </div>
+                        <div class="lifestyle outdoors">
+                            <div>
+                                <img src="img/img_outdoors03.jpg" alt="ブルックリンスタイルのリビング">
+                            </div>
+                            <div class="lifestyle-text outdoors-text fadeIn">
+                                <h3>LifeStyle with 「Haco」
+                                    <br>~Outdoors編~
+                                </h3>
+                                <div>
+                                    <h4>海沿いカフェでエレガントな時間を</h4>
+                                </div>
+                                <p>海の見えるカフェが多いのが葉山の特徴の一つ。絶景オーシャンビューが広がるカフェテラスがたくさん見つけられる。たまに近くのカフェで大人のエレガントな時間を過ごすのも良いでしょう。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button"><a class="btn" href=" https://wyx1019.github.io/googleMapAPI-haco/" target="_blank"><i class="fas fa-search-location fa-lg"></i>葉山マッピングを見る</a></div>
+                    <div class="sunset"></div>
+                    <div class="msg fadeIn">
+                        <p>好きな物で囲まれた暮らし、<br>それは好きな色だったり、カタチだったり、雰囲気だったり
+                            <br>それは好きな街だったり、自然だったり、自分の趣味だったり、
+                            <br>好きなものを集めて心地の良い空間を作ってみましょう。</p>
+                    </div>
+                </div>
+            </section>
+            <!-- price & plan -->
+            <section id="plan">
+                <h2>
+                  <span class="eng">PRICE & PLAN</span>
+                  <span class="jp">完全定額制の特徴</span>
+                </h2>
+                <div class="flex bgBlack">
+                  <div class="feature">
+                    <div class="imgBlock">
+                      <img src="img/img_plan01.jpg" alt="" />
+                    </div>
+                    <div class="txtBlock">
+                      <div class="numBlock">01</div>
+                      <div class="msgBlock">
+                        <h3>
+                          金額の明確さ！
+                          <br />1980万円<span>(税込)</span>/28坪
+                        </h3>
+                        <div class="description fadeIn">
+                          <p>
+                            <span>✖</span>一般の注文住宅だと...
+                            <br />資金計画は繁雑だといわれています。工事や設計の変更などで追加費用が発生しやすく、予算オーバーになりがちです。
+                          </p>
+                          <p>
+                            <span>✔</span>「Haco」の完全定額制は...
+                            <br />間取りだけを選んだら、金額が変わらない。資金計画しやすい！28坪・30坪・32坪・34坪から選べます。
+                          </p>
+                        </div>
+                        <div class="link"><a href="http://www.star-home.co.jp/haco/">詳しくは公式サイトをご覧ください</a><span>>></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature">
+                    <div class="imgBlock">
+                      <img class="rescale" src="img/img_plan02.jpg" alt="" />
+                    </div>
+                    <div class="txtBlock">
+                      <div class="numBlock">02</div>
+                      <div class="msgBlock">
+                        <h3>
+                          設計に悩む時間を短縮！
+                          <br />楽々に家を建てられる
+                        </h3>
+                        <div class="description fadeIn">
+                          <p>
+                            <span>✖</span><b>一般の注文住宅だと...</b>
+                            <br />設計や見積もりの段階に、つい多くの時間を割かれ、使うものに悩みがちです。
+                          </p>
+                          <p>
+                            <span>✔</span><b>「Haco」の完全定額制は...</b><br />弊社が商品イメージ内（ブルックリンスタイル）で治る材料を選定しています。素材や色の組み合わせをお好きなように変えられます。
+                          </p>
+                        </div>
+                        <div class="link"><a href="http://www.star-home.co.jp/haco/">詳しくは公式サイトをご覧ください</a><span>>></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <!-- contact -->
+            <section id="contact">
+                <h2>
+                  <span class="eng">CONTACT US</span>
+                  <span class="jp">お問い合わせ</span>
+                </h2>
+                <div class="bgBlack">
+                    <div class="grid">
+                        <div class="imgBlock"><img src="img/img_contact.jpg" alt="" /></div>
+                        <div class="msg">
+                                    <p class="text fadeIn">設立50年、地元に根付いた「スターホーム」が
+                                    <br>土地探しからデザインまで
+                                    <br>お好みに合わせてご提案させて頂きます。
+                                    <br>ご来館頂ければ、より選びやすく、<br>決めやすくなるようご用意しております。
+                                    <br>ぜひ気軽にご相談ください。</P>
+                                    <!-- <div class="link"><a href="http://www.star-home.co.jp/haco/">公式サイトはこちらへ</a><span>>></span></div> -->
+                                    <div class="button">
+                                        <a class="btn fadeIn delay300" href="http://www.star-home.co.jp/contact_us/"><i class="far fa-file-alt"></i>資料請求・お問い合わせ</a>
+                                        <a class="btn fadeIn delay300" href="http://www.star-home.co.jp/contact_us/"><i class="far fa-clone"></i>公式サイトへ</a>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10047.493654124584!2d139.59591617418175!3d35.26877253935284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe185c6266b2bbace!2z44K544K_44O844Ob44O844Og!5e0!3m2!1sja!2sjp!4v1578529910812!5m2!1sja!2sjp"
+                            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="company">
+                    <div class="telBlock">
+                        <div class="icon"><img src="img/icon_phone.svg" alt=""></div>
+                        <div>
+                            <h3>お電話での問い合わせ</h3>
+                            <p>0120-965-023</p>
+                        </div>
+                    </div>
+                    <div class="companyInfo">
+                        <h3><img src="img/logo_corp.png" alt="">スターホーム株式会社</h3>
+                        <p class="address">〒240-0115神奈川県三浦郡葉山町上山口1431-1</p>
+                        <div class="socialLink">
+                            <span class="fab fa-instagram fa-lg sns"></span>
+                            <span class="fab fa-facebook-square fa-lg sns"></span>
+                            <span class="fab fa-youtube fa-lg sns"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="copyright"><p>&copy;スターホーム株式会社 All Rights Reserved.</p></div>
+        </footer>
+    </main>
+</body>
+
+</html>
