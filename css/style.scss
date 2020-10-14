@@ -670,8 +670,8 @@ footer{
 
 .fadeIn{
     opacity: 0;
-    transition: all .5s ease-in-out;
-    transform: translateY( 30px);
+    transition: all .8s ease-in-out;
+    transform: translateY( 10px);
 }
 .topFadeIn{
     @extend .fadeIn;

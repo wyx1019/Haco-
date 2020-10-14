@@ -1321,10 +1321,10 @@ footer .copyright p {
 
 .fadeIn, .topFadeIn {
   opacity: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .topFadeIn {
