@@ -931,10 +931,8 @@ nav .navigationPC {
 
 #mainVisual .mainMsg {
   position: absolute;
-  top: 55%;
-  left: 38%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 45%;
+  left: 5%;
 }
 
 #mainVisual .mainMsg h2 {
@@ -1053,6 +1051,7 @@ nav .navigationPC {
   padding: 30px 20%;
   background: #231f20;
   color: #fafafa;
+  text-align: center;
 }
 
 #concept .inner .msg .orange {
@@ -1067,25 +1066,25 @@ nav .navigationPC {
 }
 
 #concept .img-end {
-  width: 80%;
+  width: 100%;
   position: relative;
 }
 
 #concept .img-end .img-kitchen {
-  width: 100%;
+  width: 80%;
   margin: 25px 0 0 0;
 }
 
 #concept .img-end .img-tableware {
-  width: 50%;
-  max-width: 220px;
+  width: 42%;
+  max-width: 215px;
   position: absolute;
-  right: -95px;
-  bottom: -150px;
+  right: 0;
+  top: 90%;
 }
 
 #lifestyle {
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 #lifestyle .lifestyle {
@@ -1238,7 +1237,7 @@ nav .navigationPC {
 
 #contact .bgBlack .msg {
   color: #fafafa;
-  padding: 8% 5% 5%;
+  padding: 5%;
   text-align: center;
 }
 
@@ -1283,21 +1282,25 @@ nav .navigationPC {
   margin: 0 5px;
 }
 
+#contact .company .telBlock div h3 {
+  font-size: 1rem;
+}
+
 #contact .company .telBlock div p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 #contact .company .telBlock .icon {
-  width: 80px;
+  width: 70px;
   margin-left: -11%;
 }
 
 #contact .company .companyInfo {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #contact .company .companyInfo h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 #contact .company .companyInfo img {
@@ -1423,7 +1426,7 @@ footer .copyright p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   html {
     font-size: 15px;
   }
@@ -1438,8 +1441,8 @@ footer .copyright p {
     padding: 0 4px 0 0;
   }
   #mainVisual .mainMsg {
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 8%;
   }
   #mainVisual .mainMsg h2 {
     font-size: 4.5rem;
@@ -1452,8 +1455,9 @@ footer .copyright p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   #concept::after {
     display: none;
@@ -1470,97 +1474,19 @@ footer .copyright p {
     padding-left: 50px;
   }
   #concept .img-end {
-    -webkit-transform: translate(-55%, -40px);
-            transform: translate(-55%, -40px);
+    -webkit-transform: translateX(-225px);
+            transform: translateX(-225px);
   }
   #concept .img-end .img-kitchen {
     min-width: 300px;
-    margin-right: 26px;
   }
   #concept .img-end .img-tableware {
-    top: 180px;
+    top: 21%;
+    right: -8%;
     max-width: 170px;
-    -webkit-transform: translate(-46px 0);
-            transform: translate(-46px 0);
-  }
-  #lifestyle {
-    margin-top: 100px;
-  }
-  #lifestyle .msg {
-    margin-top: -5%;
-  }
-  #lifestyle .lifestyle {
-    margin: 0;
-  }
-  #lifestyle .lifestyle .indoors-text {
-    position: absolute;
-    width: 50%;
-    top: 10vw;
-    left: 7%;
-    padding: 0;
-    color: white;
-  }
-  #lifestyle .lifestyle .indoors-text h4 {
-    background: black;
-  }
-  #lifestyle .bgDark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all .8s;
-    transition: all .8s;
-    background-color: transparent;
-  }
-  #lifestyle .turnDark {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  .outdoors-wrap {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .outdoors-wrap .outdoors .rescale {
-    height: 23vw;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .sunset {
     background-attachment: fixed;
-  }
-  #plan .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #plan .rescale {
-    height: 38vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #plan .bgBlack {
-    position: relative;
-  }
-  #plan .bgBlack::before {
-    content: '';
-    width: 100%;
-    height: 83%;
-    top: 170px;
-    right: 0;
-  }
-  #plan .bgBlack .txtBlock .msgBlock {
-    background: transparent;
-    margin-right: 10%;
-  }
-  #plan .bgBlack .txtBlock .msgBlock .description {
-    width: 86%;
-  }
-  #plan .bgBlack .txtBlock .msgBlock .description a {
-    display: none;
   }
   #contact .company {
     display: -webkit-box;
@@ -1587,7 +1513,7 @@ footer .copyright p {
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 900px) {
   #navigationSP,
   #mainVisual .topContact,
   #concept .inner .msg .inline {
@@ -1621,8 +1547,9 @@ footer .copyright p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 135px;
+    margin-left: 126px;
     margin-top: 0;
+    padding-left: 100px;
     -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   }
@@ -1657,8 +1584,8 @@ footer .copyright p {
     margin: 0 0 0 auto;
   }
   #mainVisual .mainMsg {
-    top: 55%;
-    left: 41%;
+    top: 35%;
+    left: 10%;
   }
   #mainVisual .mainMsg p {
     margin: 9px 0;
@@ -1671,7 +1598,7 @@ footer .copyright p {
     position: fixed;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    left: -111px;
+    left: -120px;
     top: 48%;
   }
   #mainVisual .side-pc span {
@@ -1687,13 +1614,88 @@ footer .copyright p {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  #concept .img-end .img-kitchen {
-    min-width: 330px;
-    margin-right: 36px;
+  #concept .img-end {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
-  #lifestyle .indoors .indoors-text {
+  #concept .img-end .img-kitchen {
+    min-width: 300px;
+  }
+  #lifestyle {
+    margin-top: 100px;
+  }
+  #lifestyle .msg {
+    margin-top: -5%;
+  }
+  #lifestyle .lifestyle {
+    margin: 0;
+  }
+  #lifestyle .lifestyle .indoors-text {
+    position: absolute;
     width: 35%;
     top: 18vw;
+    left: 7%;
+    padding: 0;
+    color: white;
+  }
+  #lifestyle .lifestyle .indoors-text h4 {
+    background: black;
+  }
+  #lifestyle .bgDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    background-color: transparent;
+  }
+  #lifestyle .turnDark {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .outdoors-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .outdoors-wrap .outdoors .rescale {
+    height: 23vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #plan .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #plan .rescale {
+    height: 38vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #plan .bgBlack {
+    position: relative;
+  }
+  #plan .bgBlack::before {
+    content: '';
+    width: 100%;
+    height: 83%;
+    top: 170px;
+    right: 0;
+  }
+  #plan .bgBlack .txtBlock .msgBlock {
+    background: transparent;
+    margin-right: 10%;
+  }
+  #plan .bgBlack .txtBlock .msgBlock .description {
+    width: 86%;
+  }
+  #plan .bgBlack .txtBlock .msgBlock .description a {
+    display: none;
   }
   #contact .bgBlack {
     margin-top: 125px;
@@ -1703,6 +1705,9 @@ footer .copyright p {
     display: grid;
     -ms-grid-columns: 5fr 4fr;
         grid-template-columns: 5fr 4fr;
+  }
+  #contact .bgBlack .grid .msg {
+    padding-top: 8%;
   }
   #contact .bgBlack .grid .imgBlock {
     margin-top: -100px;

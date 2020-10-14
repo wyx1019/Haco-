@@ -6,7 +6,7 @@ $(window).on('load', function () {
 });
 
 function stopload() {
-    $('#loader').fadeOut(500);
+    $('#loader').fadeOut(800);
 
 }
 $(function () {

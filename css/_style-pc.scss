@@ -3,7 +3,7 @@ $base-color02:#231F20;
 $main-color:#DC9248;
 $sub-color:#56748A;
 
-@media (min-width:1180px) {
+@media (min-width:900px) {
 
     // base
     #navigationSP,
@@ -43,8 +43,9 @@ $sub-color:#56748A;
         .navigationPC {
             display: flex;
             justify-content: space-between;
-            margin-left: 135px;
+            margin-left: 126px;
             margin-top: 0;
+            padding-left: 100px;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 
             li {
@@ -90,8 +91,8 @@ $sub-color:#56748A;
         }
 
         .mainMsg {
-            top: 55%;
-            left: 41%;
+            top: 35%;
+            left: 10%;
 
             p {
                 margin: 9px 0;
@@ -106,7 +107,7 @@ $sub-color:#56748A;
             display: block;
             position: fixed;
             transform: rotate(90deg);
-            left: -111px;
+            left: -120px;
             top: 48%;
 
             span {
@@ -125,20 +126,110 @@ $sub-color:#56748A;
     }
 
     //concept
-    #concept .img-end .img-kitchen {
-        min-width: 330px;
-        margin-right: 36px;
-    }
+    #concept .img-end{
+        transform: translateX(-30%);
+        .img-kitchen {
+            min-width: 300px;
+        }
+        }
 
     //lifestyle
-    #lifestyle {
-        .indoors {
-            .indoors-text {
-                width: 35%;
-                top: 18vw;
+    // #lifestyle {
+    //     .indoors {
+    //         .indoors-text {
+    //             width: 35%;
+    //             top: 18vw;
+    //         }
+    //     }
+    // }
+        // lifestyle
+        #lifestyle {
+            margin-top: 100px;
+            .msg{
+                margin-top: -5%;
+            }
+    
+            .lifestyle {
+                margin: 0;
+    
+                .indoors-text {
+                    position: absolute;
+                    width: 35%;
+                    top: 18vw;
+                    left: 7%;
+                    padding: 0;
+                    color: white;
+    
+                    h4 {
+                        background: black;
+                    }
+                }
+            }
+    
+            .bgDark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all .8s;
+                background-color: transparent;
+            }
+            .turnDark{
+                background-color: rgba(0, 0, 0, 0.4);
             }
         }
-    }
+        .outdoors-wrap{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .outdoors{
+                .rescale{
+                    height: 23vw;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        //plan
+        #plan {
+            .flex{
+                display: flex;
+                justify-content: space-around;
+            }
+            .rescale{
+                height: 38vw;
+                object-fit: cover;
+            }
+            .bgBlack {
+                position: relative;
+    
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 83%;
+                    top: 170px;
+                    right: 0;
+                }
+    
+                .txtBlock {
+    
+                    // background: $base-color02;
+                    .msgBlock {
+                        background: transparent;
+                        margin-right: 10%;
+    
+                        .description {
+                            width: 86%;
+    
+                            a {
+                                display: none;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
 
     //contact
         #contact{
@@ -147,6 +238,9 @@ $sub-color:#56748A;
                 .grid{
                     display: grid;
                     grid-template-columns: 5fr 4fr;
+                    .msg{
+                        padding-top: 8%;
+                    }
                     .imgBlock{
                         margin-top: -100px;
                     }
@@ -160,5 +254,4 @@ $sub-color:#56748A;
             }
         }
 
-    // footer
     }

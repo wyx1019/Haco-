@@ -299,9 +299,8 @@ nav {
 
     .mainMsg {
         position: absolute;
-        top: 55%;
-        left: 38%;
-        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 5%;
 
         h2 {
             text-align: left;
@@ -423,6 +422,7 @@ nav {
             padding: 30px 20%;
             background: $base-color02;
             color: $base-color01;
+            text-align: center;
 
             .orange {
                 color: $main-color;
@@ -438,27 +438,27 @@ nav {
     }
 
     .img-end {
-        width: 80%;
+        width: 100%;
         position: relative;
 
         .img-kitchen {
-            width: 100%;
+            width: 80%;
             margin: 25px 0 0 0;
         }
 
         .img-tableware {
-            width: 50%;
-            max-width: 220px;
+            width: 42%;
+            max-width: 215px;
             position: absolute;
-            right: -95px;
-            bottom: -150px;
+            right: 0;
+            top: 90%;
         }
     }
 }
 
 // lifestyle 
 #lifestyle {
-    margin-top: 180px;
+    margin-top: 200px;
 
     .lifestyle {
         position: relative;
@@ -601,7 +601,7 @@ nav {
         background: $base-color02;
         .msg{
             color: $base-color01;
-            padding: 8% 5% 5%;
+            padding: 5%;
             text-align: center;
         }
         .button{
@@ -630,19 +630,22 @@ nav {
             justify-content: center;
             div{
                 margin: 0 5px;
+                h3{
+                    font-size: 1rem;
+                }
                 p{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
             .icon{
-                width: 80px;
+                width: 70px;
                 margin-left: -11%;
             }
         }
         .companyInfo{
-            margin-top: 40px;
+            margin-top: 30px;
             h3{
-                font-size: 1.6rem;
+                font-size: 1.3rem;
             }
             img{
                 width: 30%;
